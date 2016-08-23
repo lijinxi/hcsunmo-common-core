@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+
+    <artifactId>hc-common</artifactId>
+    <groupId>com.hc.scm</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>com.hc.scm</groupId>
+  <artifactId>hc-common-core</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>hc-common-core</name>
+  <url>http://maven.apache.org</url>
+
+ <dependencies>
+  
+  
+     <dependency>
+	  <groupId>com.microsoft.sqlserver.jdbc</groupId>
+	  <artifactId>com.microsoft.sqlserver.jdbc</artifactId>
+	  <version>1.0.0</version>
+	</dependency>
+	         
+
+
+       <dependency>  
+            <groupId>com.fasterxml.jackson.core</groupId>  
+            <artifactId>jackson-databind</artifactId>  
+         </dependency> 
+  <!-- junit -->
+    <!-- junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<!-- spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+		
+		<!-- mybatis -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+		</dependency>
+		<!-- javax -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+		</dependency>
+		<!-- logging -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<!-- commons -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+		</dependency>
+		
+		
+		<!-- fastjson -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+		</dependency>
+		
+		<!-- pagehelper -->
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper</artifactId>
+		</dependency>
+		
+		<!-- jedis -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+		</dependency>
+		<!-- redis -->
+		<dependency>  
+		    <groupId>org.springframework.data</groupId>  
+		    <artifactId>spring-data-redis</artifactId>
+		</dependency>  
+		
+		<!-- aop start -->
+		<dependency>  
+		    <groupId>org.aspectj</groupId>  
+		    <artifactId>aspectjrt</artifactId>
+		</dependency> 
+		<dependency>  
+			<groupId>org.springframework</groupId>  
+			<artifactId>spring-aspects</artifactId>
+		</dependency> 
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib</artifactId>
+		</dependency>
+		<dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+        </dependency>
+        <!-- aop end -->
+        
+        <dependency>  
+		    <groupId>commons-beanutils</groupId>  
+		    <artifactId>commons-beanutils-core</artifactId>
+		    <exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
+		<dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+    	</dependency>
+    	<dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+    	</dependency>
+    	<dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml-schemas</artifactId>
+    	</dependency>
+		
+		
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-all</artifactId>
+			<version>1.2.3</version>
+			<exclusions>  
+                <exclusion>  
+                    <groupId>org.apache.shiro</groupId>  
+                    <artifactId>shiro-guice</artifactId>  
+                </exclusion>  
+            </exclusions>  
+		</dependency>
+		
+		
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		</dependency>
+		
+		<dependency>
+			 <groupId>commons-fileupload</groupId>
+			 <artifactId>commons-fileupload</artifactId>
+		</dependency>
+		
+		<dependency>
+		  <groupId>org.jasig.cas.client</groupId>
+		  <artifactId>cas-client-core</artifactId>
+		  <exclusions>  
+            <exclusion>  
+                <artifactId>commons-codec</artifactId>  
+                <groupId>commons-codec</groupId>  
+            </exclusion>  
+       	  </exclusions>  
+		</dependency>
+		<dependency>
+		  <groupId>org.apache.xmlgraphics</groupId>
+		  <artifactId>batik-ext</artifactId>
+		</dependency>
+		
+		<dependency>
+		  <groupId>org.apache.httpcomponents</groupId>
+		  <artifactId>httpclient</artifactId>
+		</dependency>
+		
+		
+		
+		
+		<!-- log4j -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+		</dependency>
+		
+           <dependency>
+				  <groupId>nl.justobjects.pushlet</groupId>
+				  <artifactId>pushlet</artifactId>
+				  <version>2.0.4</version>
+			</dependency>
+		<dependency>
+			  <groupId>com.starit.diamond</groupId>
+			  <artifactId>tp.diamond-client</artifactId>
+			</dependency>
+			
+			<dependency>
+			  <groupId>com.starit.diamond.utils</groupId>
+			  <artifactId>tp.diamond-utils</artifactId>
+			</dependency>
+			<!-- FineReport jar -->
+			<dependency>
+				<groupId>fr-server</groupId>
+				<artifactId>fr-server</artifactId>
+			</dependency>
+			<dependency>
+			<groupId>net.sf.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+			<version>2.9.1</version>
+		</dependency>
+
+          <!--   <dependency>
+			  <groupId>org.jrobin</groupId>
+			  <artifactId>jrobin</artifactId>
+			
+			</dependency>
+			<dependency>
+			  <groupId>net.bull.javamelody</groupId>
+			  <artifactId>javamelody-core</artifactId>
+			 
+			</dependency>
+            --> 
+        
+
+  </dependencies>
+</project>
